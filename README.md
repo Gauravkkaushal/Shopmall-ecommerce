@@ -98,12 +98,14 @@ git clone [https://github.com/Gauravkkaushal/Shopmall-ecommerce.git](https://git
 cd Shopmall-ecommerce
 
 
+
 2. Setup Backend
 
 Navigate to the backend folder and install dependencies:
 
 cd ecommerce-backend
 npm install
+
 
 
 Create a .env file in the root of ecommerce-backend folder and add your secrets:
@@ -113,10 +115,12 @@ MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_super_secret_key
 
 
+
 Start the server:
 
 npm run dev
 # Server runs on http://localhost:5000
+
 
 
 3. Setup Frontend
@@ -127,10 +131,12 @@ cd client
 npm install
 
 
+
 Start the client application:
 
 npm run dev
 # Client runs on http://localhost:5173
+
 
 
 🛣️ API Endpoints
@@ -210,14 +216,17 @@ Create your Feature Branch:
 git checkout -b feature/AmazingFeature
 
 
+
 Commit your changes:
 
 git commit -m 'Add some AmazingFeature'
 
 
+
 Push to the Branch:
 
 git push origin feature/AmazingFeature
+
 
 
 Open a Pull Request
@@ -228,6 +237,8 @@ Gaurav Kaushal
 
 GitHub: @Gauravkkaushal
 
-LinkedIn: [Add Your Profile Link Here]
+LinkedIn: 
+
+$$Add Your Profile Link Here$$
 
 Made with ❤️ and JavaScript
