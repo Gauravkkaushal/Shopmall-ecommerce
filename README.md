@@ -1,244 +1,174 @@
-🛍️ ShopMall - Modern MERN E-Commerce Platform
+# 🛍️ **ShopMall – Modern MERN E-Commerce Platform**
 
-A fully functional, full-stack E-commerce application built with the MERN Stack (MongoDB, Express, React, Node.js). Featuring a modern glassmorphism UI, secure authentication, admin dashboard, and a seamless shopping cart experience.
+A fully functional, full-stack **E-Commerce Web Application** built using the **MERN Stack** (MongoDB, Express, React, Node.js).
+ShopMall features a **modern glassmorphism UI**, secure authentication, admin dashboard, product management, and a seamless shopping experience.
 
-🌟 Live Demo
+---
 
-🔗 Live Site: Link Coming Soon
+## 🌟 **Live Demo**
 
-🎥 Video Demo: Link Coming Soon
+🔗 **Live Site:** *Coming Soon*
+🎥 **Video Demo:** *Coming Soon*
 
-🚀 Key Features
+---
 
-👤 User Experience (Frontend)
+## 🚀 **Key Features**
 
-Modern UI/UX: Built with React + Tailwind CSS featuring Glassmorphism, Gradients, and Animations.
+### 👤 **Frontend – User Experience**
 
-Product Gallery: Grid layout with hover effects and responsive design.
+* ✨ **Modern UI/UX** with Glassmorphism, gradients & smooth animations
+* 🛒 **Product Gallery** with hover effects & responsive grid
+* 📌 **Smart Navbar** (live cart count, user pill, logout/login rendering)
+* 🔐 **Auth Pages** – Login & Register with split-screen modern UI
+* 🛍️ **Shopping Cart** – Add items, auto price calculation, remove items
+* 🔔 **Toast Notifications** using *react-hot-toast* (no boring alerts!)
 
-Smart Navbar: Live cart count badge, user profile pill, and conditional rendering (Login/Logout).
+---
 
-Authentication: Secure Login & Registration pages with split-screen design.
+### 🛡️ **Backend & Security**
 
-Shopping Cart: Add items, live price calculation, and remove items functionality.
+* ⚙️ RESTful API built with **Node.js + Express**
+* 🗄️ **MongoDB + Mongoose** for storing Users, Products, Carts
+* 🔑 **JWT Authentication** (stateless & secure)
+* 🔒 **Password Hashing** using BCrypt
+* 🛂 **Role-Based Access Control (RBAC)** – Admin-only routes protected by middleware
 
-Toast Notifications: Beautiful popups using react-hot-toast instead of boring alerts.
+---
 
-🛡️ Backend & Security
+### ⚡ **Admin Features**
 
-Secure API: Built with Node.js & Express.
+* 🖥️ **Admin Dashboard** for launching new products
+* ➕ Add product details (name, price, image, stock, category)
+* 🚫 Non-admin users cannot access admin routes
 
-Database: MongoDB (Mongoose) for storing Users, Products, and Carts.
+---
 
-Authentication: JWT (JSON Web Token) based stateless authentication.
+## 🛠️ **Tech Stack**
 
-Password Security: BCrypt hashing to protect user passwords.
+| Area                 | Technology                                                                        |
+| -------------------- | --------------------------------------------------------------------------------- |
+| **Frontend**         | React (Vite), Tailwind CSS, React Router DOM, Axios, React Icons, React Hot Toast |
+| **Backend**          | Node.js, Express.js                                                               |
+| **Database**         | MongoDB, Mongoose                                                                 |
+| **Auth**             | JWT (JSON Web Token), BCryptJS                                                    |
+| **State Management** | React Context API                                                                 |
 
-Role-Based Access Control (RBAC): Special Admin Routes protected by middleware.
+---
 
-⚡ Admin Powers
-
-Admin Dashboard: Exclusive page for Admins to launch new products.
-
-Product Management: Add product details (Name, Price, Image, Stock, Category).
-
-Security Guard: Non-admin users cannot access dashboard URLs.
-
-🛠️ Tech Stack
-
-Area
-
-Technology
-
-Frontend
-
-React (Vite), Tailwind CSS, React Router DOM, Axios, React Icons, React Hot Toast
-
-Backend
-
-Node.js, Express.js
-
-Database
-
-MongoDB, Mongoose
-
-Auth
-
-JSON Web Token (JWT), BCryptJS
-
-State Management
-
-React Context API
-
-📸 Screenshots
-
-Home Page
-
-Login Page
+## 📸 **Screenshots**
 
 
 
+🖼️ **Home Page**
+<img width="1900" height="962" alt="image" src="https://github.com/user-attachments/assets/8894c707-1420-40ec-b56e-f92c8bd52436" />
 
+🖼️ **Login Page**
+<img width="1899" height="946" alt="image" src="https://github.com/user-attachments/assets/01a7ba45-e802-4f17-bc30-76748b158174" />
 
-(Note: Replace these links with your actual project screenshots)
+---
 
-⚙️ Installation & Run Locally
+## ⚙️ **Installation & Run Locally**
 
-Follow these steps to setup the project on your machine.
+Follow the steps below to run ShopMall on your machine.
 
-Prerequisites
+---
 
-Node.js installed
+### ✅ **Prerequisites**
 
-MongoDB installed (or MongoDB Atlas URI)
+* Node.js installed
+* MongoDB installed locally **or** MongoDB Atlas URI
 
-1. Clone the Repository
+---
 
-git clone [https://github.com/Gauravkkaushal/Shopmall-ecommerce.git](https://github.com/Gauravkkaushal/Shopmall-ecommerce.git)
+### 1️⃣ **Clone the Repository**
+
+```bash
+git clone https://github.com/Gauravkkaushal/Shopmall-ecommerce.git
 cd Shopmall-ecommerce
+```
 
+---
 
+### 2️⃣ **Setup Backend**
 
-2. Setup Backend
-
-Navigate to the backend folder and install dependencies:
-
+```bash
 cd ecommerce-backend
 npm install
+```
 
+Create a **.env** file inside `ecommerce-backend`:
 
-
-Create a .env file in the root of ecommerce-backend folder and add your secrets:
-
+```
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_super_secret_key
+```
 
+Start backend server:
 
-
-Start the server:
-
+```bash
 npm run dev
-# Server runs on http://localhost:5000
+```
 
+Backend runs on: **[http://localhost:5000](http://localhost:5000)**
 
+---
 
-3. Setup Frontend
+### 3️⃣ **Setup Frontend**
 
-Open a new terminal and navigate to the client folder:
+Open a new terminal:
 
+```bash
 cd client
 npm install
-
-
-
-Start the client application:
-
 npm run dev
-# Client runs on http://localhost:5173
+```
 
+Frontend runs on: **[http://localhost:5173](http://localhost:5173)**
 
+---
 
-🛣️ API Endpoints
+## 🛣️ **API Endpoints**
 
-Method
+| Method | Endpoint               | Description            | Access   |
+| ------ | ---------------------- | ---------------------- | -------- |
+| POST   | `/api/auth/register`   | Register a new user    | Public   |
+| POST   | `/api/auth/login`      | Login user & get token | Public   |
+| GET    | `/api/products`        | Fetch all products     | Public   |
+| POST   | `/api/products/add`    | Add new product        | Admin 🔒 |
+| POST   | `/api/cart/add`        | Add item to cart       | User 🔒  |
+| GET    | `/api/cart`            | Get user cart          | User 🔒  |
+| DELETE | `/api/cart/remove/:id` | Remove cart item       | User 🔒  |
 
-Endpoint
+---
 
-Description
-
-Access
-
-POST
-
-/api/auth/register
-
-Register a new user
-
-Public
-
-POST
-
-/api/auth/login
-
-Login user & get Token
-
-Public
-
-GET
-
-/api/products
-
-Get all products
-
-Public
-
-POST
-
-/api/products/add
-
-Add a new product
-
-Admin Only 🔒
-
-POST
-
-/api/cart/add
-
-Add item to cart
-
-User 🔒
-
-GET
-
-/api/cart
-
-Get user cart
-
-User 🔒
-
-DELETE
-
-/api/cart/remove/:id
-
-Remove item
-
-User 🔒
-
-🤝 Contributing
+## 🤝 **Contributing**
 
 Contributions are welcome!
 
-Fork the project
-
-Create your Feature Branch:
-
+```bash
+# Create a new feature branch
 git checkout -b feature/AmazingFeature
 
+# Commit your changes
+git commit -m "Add AmazingFeature"
 
-
-Commit your changes:
-
-git commit -m 'Add some AmazingFeature'
-
-
-
-Push to the Branch:
-
+# Push to your branch
 git push origin feature/AmazingFeature
+```
 
+Open a Pull Request 🚀
 
+---
 
-Open a Pull Request
+## 👨‍💻 **Author**
 
-👨‍💻 Author
+**Gaurav Kaushal**
+GitHub: [@Gauravkkaushal](https://github.com/Gauravkkaushal)
+LinkedIn: https://www.linkedin.com/in/gauravkkaushal
 
-Gaurav Kaushal
+---
 
-GitHub: @Gauravkkaushal
+## ❤️ **Made with passion, JavaScript, and lots of Chai.**
 
-LinkedIn: 
-
-$$Add Your Profile Link Here$$
-
-Made with ❤️ and JavaScript
+---
